@@ -1,9 +1,138 @@
+body{
+		background-color:#8B0000;
+}
+
+.logo-img{
+	margin-top:10px;
+  width:150px;
+}
+
 .header-block{
-    height: 200px;
-    background-color: blue;
+	height: 150px;
+  /*background-color:white;*/
+}
+
+.redes-sociales-header{
+  height: 100%;
 }
 
 .redes-sociales{
-  height: 100%;
-  display: inline;
+	position: absolute;
+	bottom:0;
+	right:0;
+	margin-right:100px;
+	margin-bottom:30px;
 }
+
+.navigation{
+	overflow: hidden;
+  position: relative;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.navbar-nav {
+    display:table;
+    width:100%;
+    margin: 0;
+		background-color: #ffab40;
+		border-radius: 5px;
+}
+.navbar-nav > li {
+    float:none;
+    display:table-cell;
+    text-align:center;
+		color: black;
+}
+
+.navbar-nav > li > a {
+		color: black;
+}
+
+.nav > li > a:hover{
+	background-color: #ffd180;
+}
+
+.content{
+	height:100%;
+	border-radius: 5px;
+	background-color:white;
+}
+
+.entry{
+	margin-bottom: 2rem;
+}
+
+.img-entry img{
+	width:100%;
+	margin-top: 50%;
+}
+
+.comments{
+	margin-top: 2rem;
+}
+
+.comments-textarea{
+	padding-right: 3rem;
+}
+
+.form-group{
+		margin-top: 2rem !important;
+		margin-bottom: 2rem !important;
+}
+
+.form-group, .input-group{
+	width: 100%;
+}
+
+textarea{
+		resize: none;
+}
+
+.user-icon-size{
+	margin-left: 5rem;
+	margin-top: 1rem;
+	font-size: 5rem;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+	.logo{
+		text-align:center;
+	}
+
+	.navbar-nav > li {
+		display:table-row !important;
+	}
+
+	.header-block{
+		height: 200px;
+	}
+
+	.redes-sociales{
+		position: inherit !important;
+		margin-top:10px;
+		margin-right:10px;
+	}
+
+	.user-icon-size{
+		font-size: 3rem;
+		margin-left: 2rem;
+		margin-top: 2rem;
+	}
+
+	.img-entry img{
+		margin-top: 0%;
+	}
+}
+
+ /*Medium devices (desktops, 992px and up)*/
+@media screen and (min-width: 770px) and (max-width: 992px) {
+	.img-entry img{
+		margin-top: 0%;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up)
+@media screen and (min-width: 1200px) {
+} */
